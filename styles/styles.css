@@ -336,3 +336,91 @@
     margin: 20px 0 20px 0;
     
 }
+
+.bigsliderwrapper {
+    background-color: #eee;
+    width: 100%;
+}
+
+.bigslider {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+.row-member {
+    justify-content: space-between;
+    display: flex;
+    /* background-color: #898989; */
+}
+
+.smallTitle h2 {
+    margin: 0;
+    font-size: 1.063em;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    margin-left: 20px;
+}
+
+.smallTitle span {
+    color: #c0bebe;
+    font-size: 1.438em;
+    font-weight: bold;
+    padding: 0 0 11px 0;
+    margin-left: 20px;
+}
+
+.small-10 {
+    width: 750px;
+}
+
+.memberinfo {
+        text-align: left;
+        float: none;
+        position: absolute;
+        inset: 0px auto auto 0px;
+        margin: 0px;
+        
+}
+
+.memberinfoh5 {
+    text-transform: uppercase;
+    color: black;
+    line-height: 20px;
+    font-size: 0.938em;
+    word-spacing: 3px;
+    margin: 0;
+    padding: 0 0 20px 0;
+    font-style: normal;
+    font-weight: normal;
+    margin-left: 20px;
+}
+
+.memberinfop {
+        font-size: 0.938em;
+        color: #898989;
+        font-style: italic;
+        line-height: 19px;
+        margin: 0 0 20px 0;
+        margin-left: 20px;
+}
+
+.memberInfo ul {
+    padding-left: 0;
+    margin-left: 2.142857142857143em;
+    list-style-type: none;
+}
+
+
+ul.social li a {
+    text-decoration: none;
+    color: #959494;
+    text-transform: uppercase;
+    font-size: 0.813em;
+    -webkit-transition: all ease-in;
+    -webkit-transition-delay: 0.3s;
+    -moz-transition: all ease-in 0.3s;
+    -o-transition: all ease-in 0.3s;
+    transition: all ease-in 0.3s;
+}

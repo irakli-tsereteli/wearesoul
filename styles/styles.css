@@ -466,37 +466,57 @@ ul.social li a:hover {
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
-    background-color: brown;
+    /* background-color: brown; */
+    
 }
 
 .pictures {
     
     width: 100%;
     display: flex;
-    background-color: blueviolet;
+    
+    /* background-color: blueviolet; */
     
    
 }
 
 .pictures-ul {
     display: flex;
-    background-color: bisque;
+    /* background-color: bisque; */
+    
 }
 
 .pictures-li {
     max-width: 480px;
-    background-color: aqua;
-   position: relative;
+    display: flex;
+    /* background-color: aqua; */
+    position: relative;
+    
 }
 
 .pictures img {
     max-width: 100%;
     height: auto;
-    background-color: darkgrey;
+    /* background-color: darkgrey; */
+    
 }
 
-.picturestext {
-    background-color: burlywood;
+
+
+
+
+
+.pictures-a:hover {
+    opacity: 1;
+    background-color: crimson;
+    color: black;
+}
+
+.pictures-text {
+    width: 100%;
+    display: table;
+    background: rgba(255, 255, 255, 0.7);
+    text-align: center;
     padding: 30px;
     height: 100%;
     width: 100%;
@@ -505,24 +525,7 @@ ul.social li a:hover {
     transition: all ease-in 0.3s;
     opacity: 0;
     position: absolute;
-}
-
-.pictures-a {
-    /* display: flex; */
-    background-color: #898989;
-}
-
-.pictures-a:hover {
-    opacity: 1;
-    background-color: crimson;
-}
-
-.pictures-text {
-    width: 100%;
-    background-color: darkblue;
-    display: table;
-    background: rgba(255, 255, 255, 0.7);
-    text-align: center;
+    z-index: 900;
 }
 
 .picturestextspan {
@@ -531,4 +534,19 @@ ul.social li a:hover {
     text-transform: uppercase;
     font-weight: 600;
     background-color: darkgreen;
+    position: absolute;
+    
 }
+
+.pictures-p {
+    padding:20px 0;
+    text-align: center;
+    font-size: 16px;
+    color: #959494;
+    text-transform: capitalize;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    
+}
+
+ 

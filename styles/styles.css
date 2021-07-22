@@ -490,8 +490,12 @@ ul.social li a:hover {
     max-width: 480px;
     display: flex;
     /* background-color: aqua; */
-    position: relative;
     
+    
+}
+
+.pictures-a {
+    position: relative;
 }
 
 .pictures img {
@@ -504,12 +508,16 @@ ul.social li a:hover {
 
 
 
-
+.picturestext {
+    display: flex;
+    position: absolute
+}
 
 .pictures-a:hover {
     opacity: 1;
-    background-color: crimson;
+    /* background-color: crimson; */
     color: black;
+   
 }
 
 .pictures-text {
@@ -524,7 +532,7 @@ ul.social li a:hover {
     top: 0;
     transition: all ease-in 0.3s;
     opacity: 0;
-    position: absolute;
+    /* position: absolute; */
     z-index: 900;
 }
 
@@ -534,7 +542,7 @@ ul.social li a:hover {
     text-transform: uppercase;
     font-weight: 600;
     background-color: darkgreen;
-    position: absolute;
+    
     
 }
 
@@ -549,4 +557,55 @@ ul.social li a:hover {
     
 }
 
- 
+.pictures-p:hover {
+    color: black;
+}
+
+.happyclients {
+    background-color: #eee;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.toptextdots1 {
+    display: block;
+    font-size: 23px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 800;
+    color: lightgray;
+    margin-bottom: 40px;
+}
+
+.happyclients img {
+    border-radius: 50%;
+    width: 150px;
+}
+
+.happyclients-h3 {
+    color: black;
+    font-size: 16px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.contact {
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.map{
+    max-width: 1200px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    
+}

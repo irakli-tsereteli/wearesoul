@@ -9,6 +9,8 @@
     
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/styles.css">
+
+    <script src="index.js" defer></script>
     <title>We Are Soul</title>
 </head>
 <body>
@@ -180,28 +182,28 @@
             <span class="toptextdots">. . .</span>
            <div class="toptextdivp">
             <ul class="menu-ul">
-                <li class="menu-li">
-                    <a href="#" class="menu-b">all</a> 
+                <li class="menu-li ">
+                    <button class="menu-b active" onclick="filterSelection('all')">all</button>
                     <div class="italic-line"></div>                   
                 </li>
                 <li class="menu-li">
-                    <a href="#" class="menu-b">branding</a>  
+                    <button class="menu-b" onclick="filterSelection('branding')">branding</button> 
                     <div class="italic-line"></div>                   
                 </li>
                 <li class="menu-li">
-                    <a href="#" class="menu-b">graphic</a>
+                    <button class="menu-b" onclick="filterSelection('graphic')">graphic</button>
                     <div class="italic-line"></div>                     
                 </li>
                 <li class="menu-li">
-                    <a href="#" class="menu-b">video</a> 
+                    <button class="menu-b" onclick="filterSelection('video')">video</button>
                     <div class="italic-line"></div>                    
                 </li>
                 <li class="menu-li">
-                    <a href="#" class="menu-b">web</a>
+                    <button class="menu-b" onclick="filterSelection('web')">web</button>
                     <div class="italic-line"></div>                     
                 </li>
                 <li class="menu-li">
-                    <a href="#" class="menu-b">package</a>                    
+                    <button class="menu-b" onclick="filterSelection('package')">package</button>                  
                 </li>
             </ul>
            </div>
@@ -246,7 +248,7 @@
     <div class="picture-images">
         <div class="pictures">
             <ul class="pictures-ul">
-                <li class="pictures-li">
+                <li class="pictures-li branding">
                     <a href="#" class="pictures-a">
                         <img src="images/work1.jpg" alt="greenpathway" >
                         <div class="picturestext">
@@ -259,7 +261,7 @@
                         </div>
                     </a>
                 </li>
-                <li class="pictures-li">
+                <li class="pictures-li branding">
                     <a href="#" class="pictures-a">
                         <img src="images/work2.jpg" alt="greenpathway" >
                         <div class="picturestext">
@@ -272,7 +274,7 @@
                         </div>
                     </a>
                 </li>
-                <li class="pictures-li">
+                <li class="pictures-li graphic">
                     <a href="#" class="pictures-a">
                         <img src="images/work3.jpg" alt="greenpathway" >
                         <div class="picturestext">
@@ -285,7 +287,7 @@
                         </div>
                     </a>
                 </li>
-                <li class="pictures-li">
+                <li class="pictures-li graphic">
                     <a href="#" class="pictures-a">
                         <img src="images/work4.jpg" alt="greenpathway" >
                         <div class="picturestext">
@@ -299,15 +301,12 @@
                     </a>
                 </li>
             </ul>
-        </div>
-        
-
-        
+        </div>    
     </div>
     <div class="picture-images">
         <div class="pictures">
             <ul class="pictures-ul">
-                <li class="pictures-li">
+                <li class="pictures-li video">
                     <a href="#" class="pictures-a">
                         <img src="images/work5.jpg" alt="greenpathway" >
                         <div class="picturestext">
@@ -320,7 +319,7 @@
                         </div>
                     </a>
                 </li>
-                <li class="pictures-li">
+                <li class="pictures-li video">
                     <a href="#" class="pictures-a">
                         <img src="images/work6.jpg" alt="greenpathway" class="zoom">
                         <div class="picturestext">
@@ -333,7 +332,7 @@
                         </div>
                     </a>
                 </li>
-                <li class="pictures-li">
+                <li class="pictures-li web">
                     <a href="#" class="pictures-a">
                         <img src="images/work7.jpg" alt="greenpathway" >
                         <div class="picturestext">
@@ -346,7 +345,7 @@
                         </div>
                     </a>
                 </li>
-                <li class="pictures-li">
+                <li class="pictures-li web">
                     <a href="#" class="pictures-a">
                         <img src="images/work8.jpg" alt="greenpathway" >
                         <div class="picturestext">
@@ -366,35 +365,29 @@
         
     </div>
 
-        
+    <div class="happyclients">
+        <h2 class="toptextheader">some happy clients</h2>
+            <span class="toptextdots1">. . .</span>
+            <img src="../images/testimonial2.jpg" alt="">
+           <div class="toptextdivp">
+               <p class="toptextp">“JUST A HUGE THANKS TO THE SOUL TEAM FOR BEING SO HELPFUL
+            TRUE TO THEIR WORD EACH PIXEL REFINED EACH LINE OF CODE CONSIDERED”</p>
+            </div>
+            <h3 class="happyclients-h3">LEAH TARRANT - DIRECTOR</h3>
 
-    <script>
-        var slideIndex = 1;
-        showSlides(slideIndex);
-        
-        function plusSlides(n) {
-          showSlides(slideIndex += n);
-        }
-        
-        function currentSlide(n) {
-          showSlides(slideIndex = n);
-        }
-        
-        function showSlides(n) {
-          var i;
-          var slides = document.getElementsByClassName("mySlides");
-          var dots = document.getElementsByClassName("dot");
-          if (n > slides.length) {slideIndex = 1}    
-          if (n < 1) {slideIndex = slides.length}
-          for (i = 0; i < slides.length; i++) {
-              slides[i].style.display = "none";  
-          }
-          for (i = 0; i < dots.length; i++) {
-              dots[i].className = dots[i].className.replace(" active", "");
-          }
-          slides[slideIndex-1].style.display = "block";  
-          dots[slideIndex-1].className += " active";
-        }
-        </script>
+    </div>
+    <div class="contact">
+        <h2 class="toptextheader">contact</h2>
+            <span class="toptextdots">. . .</span>
+           <div class="toptextdivp">
+               <p class="toptextp">WE'D REALLY LOVE TO HEAR FROM YOU SO WHY NOT DROP US A LINE</br>
+                AND WE'LL GET BACK TO YOU AS SOON AS WE CAN</p>
+            </div>
+    </div>
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d25864.071119047185!2d14.436702000000002!3d35.873299!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x130e5045f65b8ca7%3A0x822be2acc6ac2d5c!2sHaz-Zebbug%2C%20Malta!5e0!3m2!1sen!2sus!4v1626265347542!5m2!1sen!2sus" class="map"></iframe>
+    </div>
+
+   
 </body>
 </html>

@@ -706,7 +706,7 @@ ul.social li a:hover {
 }
 
 .homead i {
-    background-color: #c0bebe;
+    background-color: #ddd;
     border-radius: 50%;
     padding: 20px;
     margin-bottom: 20px;
@@ -714,11 +714,11 @@ ul.social li a:hover {
 
 .homead i:hover {
     background-color: black;
-    color: #c0bebe;
+    color: #ddd;
 }
 
 .phonead i {
-    background-color: #c0bebe;
+    background-color: #ddd;
     border-radius: 50%;
     padding: 20px;
     margin-bottom: 20px;
@@ -726,11 +726,11 @@ ul.social li a:hover {
 
 .phonead i:hover {
     background-color: black;
-    color: #c0bebe;
+    color: #ddd;
 }
 
 .globead i {
-    background-color: #c0bebe;
+    background-color: #ddd;
     border-radius: 50%;
     padding: 20px;
     margin-bottom: 20px;
@@ -738,11 +738,11 @@ ul.social li a:hover {
 
 .globead i:hover {
     background-color: black;
-    color: #c0bebe;
+    color: #ddd;
 }
 
 .bagad i {
-    background-color: #c0bebe;
+    background-color: #ddd;
     border-radius: 50%;
     padding: 20px;
     margin-bottom: 20px;
@@ -750,7 +750,7 @@ ul.social li a:hover {
 
 .bagad i:hover {
     background-color: black;
-    color: #c0bebe;
+    color: #ddd;
 }
 
 .circle {
@@ -759,4 +759,64 @@ ul.social li a:hover {
     border-radius: 50%;
     font-size: 30px;
     font-family: 'Source Sans Pro', sans-serif;
+}
+
+.footer{
+    background-color: #ddd;
+}
+
+.lastrow {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 25px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lastrowleft {
+    width: 500px;
+    display: flex;
+    /* justify-content: space-between; */
+    font-size: 15px;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-transform: uppercase;
+    color: #c0bebe;
+}
+
+.dribble, .twitter, .skype {
+    padding-right: 25px;
+    display: flex;
+}
+
+.dribble:hover {
+    color:#959494
+}
+
+.twitter:hover {
+    color:#959494
+}
+
+.skype:hover {
+    color:#959494
+}
+
+.dribble i {
+    padding-right: 5px;
+}
+
+.twitter i {
+    padding-right: 5px;
+}
+
+.skype i {
+    padding-right: 5px;
+}
+
+.lastrowrightp {
+    font-size: 15px;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-transform: uppercase;
+    color: #c0bebe;
 }
